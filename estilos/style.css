@@ -37,3 +37,22 @@ iframe#tela{
     height: 471px;
 
 }
+section#redes-sociais{
+    text-align: right;
+}
+section#redes-sociais > a > img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    /*Faz com que a borada faça parte da caixa.*/
+    box-sizing: border-box;
+}
+section#redes-sociais > a > img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
+    /*Parte em que vai ocorrer a trasição + o tempo que vai levar.*/
+    transition: transform 0.5s, border 0.7s;
+}
